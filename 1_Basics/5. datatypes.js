@@ -28,4 +28,27 @@ myFunc();
 console.log(typeof bigNumber);
 console.log(typeof myFunc);
 
+/////////////////////////////////////////////////////
+
+// stack(primitive), Heap(non primitive)
+
+let name = sidd
+let anothername = siddhantnagaria
+anothername = nagaria
+
+console.log(name);
+console.log(anothername);
+
+let user1 = {
+    email: "user@abc.com",
+    upi : "user@ybl"
+}
+
+let user2 = user1;
+
+user2.email = "sid@google.com"
+
+console.log(user1.email);
+console.log(user2.email);
+
 
