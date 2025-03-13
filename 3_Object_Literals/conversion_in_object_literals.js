@@ -7,3 +7,6 @@ const obj = {
 };
 
 console.log(obj);
+
+//keys are converted to strings automatically
+// even if key is a Number, then also converted into string 
