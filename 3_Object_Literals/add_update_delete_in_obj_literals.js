@@ -4,7 +4,6 @@ const student = {
     marks:90
 };
 
-
 //add new property
 student.city = "New Delhi";
 
