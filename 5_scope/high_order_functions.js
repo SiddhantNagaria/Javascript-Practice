@@ -28,3 +28,7 @@ function oddEventest(request){
         }
     }
 }
+let isOdd = oddEventest("odd");
+let isEven = oddEventest("even");
+isOdd(5);
+isEven(5);
