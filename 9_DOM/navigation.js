@@ -1,0 +1,15 @@
+let ul = document.querySelector("ul");
+ul.parentElement;
+ul.children;
+ul.firstElementChild;
+ul.lastElementChild;
+ul.previousElementSibling;
+ul.nextElementSibling;
+ul.parentElement.children;
+ul.children[0];
+ul.children[1];
+ul.children[2];
+ul.children[2].previousElementSibling;
+ul.children[1].nextElementSibling;
+ul.children[1].parentElement;
+ul.children[1].style.color = "red";
