@@ -17,3 +17,16 @@ for (link of links) {
 for (let i = 0; i < links.length; i++) {
   links[i].style.color = "red";
 };
+
+
+
+
+
+
+let heading2 = document.querySelector("h2");
+heading2.classList();
+heading2.classList.add("red");
+heading2.classList.remove("red");
+heading2.classList.toggle("red");
+heading2.classList.contains("red");
+heading2.classList.replace("red", "blue");
