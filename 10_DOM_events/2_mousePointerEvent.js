@@ -19,3 +19,12 @@ for (btn of btns) {
 function sayhello() {
   alert("button clicked");
 }
+
+btns.addEventListener('click',function(event){
+  console.log(event);
+  console.log("button clicked");
+});
+btns.addEventListener('dblclick',function(event){
+  console.log(event);
+  console.log("button clicked");
+});
