@@ -3,9 +3,7 @@ let h1 = document.querySelector("h1");
 function changecolor(color, delay, nextColor) {
   setTimeout(() => {
     h1.style.color = color;
-    if (nextColor) {
-        changecolor();
-    }
+    if (nextColor) nextColor();
   }, delay);
 }
 
