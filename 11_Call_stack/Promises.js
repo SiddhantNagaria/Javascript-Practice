@@ -21,8 +21,6 @@ savetoDb("Siddhant Nagaria")
     console.log("data was not saved");
   });
 
-
-
 //promise chaining
 savetoDb("Siddhant Nagaria")
   .then((result) => {
@@ -35,11 +33,41 @@ savetoDb("Siddhant Nagaria")
     console.log(result);
     return savetoDb("I am a software engineer");
   })
-  .then((result)=>{
+  .then((result) => {
     console.log("data3 was saved");
     console.log(result);
   })
   .catch((error) => {
     console.log("data was not saved");
     console.log(error);
+  });
+
+///callback hell color problem solution using promises
+
+let h1 = document.querySelector("h1");
+
+function changecolor(color, delay) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      h1.style.color = color;
+      resolve("color changed");
+    }, delay);
+  });
+}
+
+changecolor("red", 1000)
+  .then(() => {
+    return changecolor("blue", 1000);
+  })
+  .then(() => {
+    return changecolor("green", 1000);
+  })
+  .then(() => {
+    return changecolor("yellow", 1000);
+  })
+  .then(() => {
+    return changecolor("orange", 1000);
+  })
+  .then(() => {
+    return changecolor("purple", 1000);
   });
