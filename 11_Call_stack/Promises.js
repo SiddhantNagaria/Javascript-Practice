@@ -21,14 +21,20 @@ savetoDb("Siddhant Nagaria")
     console.log("data was not saved");
   });
 
+
+  
 //promise chaining
 savetoDb("Siddhant Nagaria")
   .then(() => {
-    console.log("data1 was saved");
+    console.log("data was saved");
     return savetoDb("my name is siddhant");
   })
   .then(() => {
     console.log("data2 was saved");
+    return savetoDb("I am a software engineer");
+  })
+  .then(()=>{
+    console.log("data3 was saved");
   })
   .catch(() => {
     console.log("data was not saved");
