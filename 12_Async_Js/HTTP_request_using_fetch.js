@@ -10,6 +10,6 @@ res
   .then((data) => {
     console.log(data);
   })
-  .catch((error) => {
-    console.log("Error = ", error);
+  .catch((err) => {
+    console.log("Error = ", err);
   });
