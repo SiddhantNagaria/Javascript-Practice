@@ -73,3 +73,17 @@ let person22 = new Person("rahul", 17);
 person11.talk() == person22.talk(); //returns true
 
 ////////////////////////////////////////////////////
+
+//Inheritance
+class Student extends Person {
+  constructor(name, age, rollNo) {
+    super(name, age);
+    this.marks = marks;
+  }
+  greet() {
+    return "hello";
+  }
+}
+
+let student1 = new Student("siddhant", 21, 100);
+console.log(student1.greet());
