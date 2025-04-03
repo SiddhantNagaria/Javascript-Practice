@@ -36,17 +36,17 @@ console.log(p1.talk() == p2.talk()); //returns false
 
 //constructors - doesn't return anything
 
-function Person(name, age) {
+function Persons(name, age) {
   this.name = name;
   this.age = age;
 }
 
-Person.prototype.talk = function () {
+Persons.prototype.talk = function () {
   console.log(`Hi my name is ${this.name}`);
 };
 
-let person1 = new Person("siddhant", 21);
-let person2 = new Person("rahul", 17);
+let person1 = new Persons("siddhant", 21);
+let person2 = new Persons("rahul", 17);
 
 person1.talk() == person2.talk(); //returns true because both are properties of prototype
 
@@ -58,6 +58,7 @@ person1.talk() == person2.talk(); //returns true because both are properties of 
 
 class Person {
   constructor(name, age) {
+    console.log("person class constructor");
     this.name = name;
     this.age = age;
   }
@@ -76,7 +77,8 @@ person11.talk() == person22.talk(); //returns true
 
 //Inheritance
 class Student extends Person {
-  constructor(name, age, rollNo) {
+  constructor(name, age, marks) {
+    console.log("student class constructor");
     super(name, age);
     this.marks = marks;
   }
@@ -85,5 +87,17 @@ class Student extends Person {
   }
 }
 
+
+class Teacher extends Person {
+  constructor(name, age, subject) {
+    console.log("teacher class constructor");
+    super(name, age);
+    this.subject = subject;
+  }
+}
+
 let student1 = new Student("siddhant", 21, 100);
-console.log(student1.greet());
+student1.talk();
+
+let teacher1 = new Teacher("siddhant", 21, "Maths");
+
