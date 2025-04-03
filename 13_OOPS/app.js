@@ -33,3 +33,23 @@ console.log(p1.talk() == p2.talk()); //returns false
 //insuffiecient way
 
 //////////////////////////////////////////////////////
+
+//constructors - doesn't return anything
+
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+Person.prototype.talk = function () {
+  console.log(`Hi my name is ${this.name}`);
+};
+
+let person1 = new Person("siddhant", 21);
+let person2 = new Person("rahul", 17);
+
+person1.talk() == person2.talk(); //returns true because both are properties of prototype
+
+/// this is better way of doing it
+
+//////////////////////////////////////////////////////
