@@ -53,3 +53,23 @@ person1.talk() == person2.talk(); //returns true because both are properties of 
 /// this is better way of doing it
 
 //////////////////////////////////////////////////////
+
+//classes
+
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  talk() {
+    console.log(`Hi my name is ${this.name}`);
+  }
+}
+
+let person11 = new Person("siddhant", 21);
+let person22 = new Person("rahul", 17);
+
+person11.talk() == person22.talk(); //returns true
+
+////////////////////////////////////////////////////
