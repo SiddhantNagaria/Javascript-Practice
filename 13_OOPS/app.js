@@ -100,4 +100,3 @@ let student1 = new Student("siddhant", 21, 100);
 student1.talk();
 
 let teacher1 = new Teacher("siddhant", 21, "Maths");
-
